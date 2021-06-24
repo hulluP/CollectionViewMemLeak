@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
+        <PackageReference Include="MvvmCross" Version="6.4.3" />
+        <PackageReference Include="MvvmCross.Forms" Version="6.4.3" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\TipCalc.Core\TipCalc.Core.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Pages\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Remove="Pages\TipView.xaml.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Remove="Pages\TipView.xaml" />
+    </ItemGroup>
+</Project>
